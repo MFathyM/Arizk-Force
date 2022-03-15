@@ -14,8 +14,6 @@ import pyrebase
 #Title and Header
 st.set_page_config(page_title='Arizk Force')
 st.header('Arizk Force')
-# image = Image.open('images/logo.png')
-# st.image(image,use_column_width=True)
 
 #API configuration of firebase
 firebaseConfig={'apiKey': "AIzaSyAc1i1S9nU3Zg6X_5j0uH4X2JmJXAPLW5w",
@@ -86,17 +84,4 @@ offerBarChart = px.bar(offerCounts,
                     template='plotly_white')
 st.plotly_chart(offerBarChart)
 st.dataframe(offerData)
-
-#Authentication
-#auth=firebase.auth()
-#login
-#email=input("Enter your email")
-#password=input("Enter your password")
-#try:
-#    auth.sign_in_with_email_and_password(email, password)
-#   print("Successfully signed in")
-#except:
-#    print("Invalid username or password")
-
-#storage=firebase.storage()
 
